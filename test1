@@ -1,1 +1,16 @@
-
+How to create SSH key 
+$ ssh-keygen
+creat a new file name or leave it empty and hit enter
+creat a new password or leave it empty and hit enter 
+$ cd .ssh
+$ cat id_rsa.pub (ssh public key) 
+copy the public key and paste into the github account New ssh key 
+$ eval ssh-agent
+$ ssh-add id_rsa (private key)
+$ cd
+$ mkdir GitHub
+$ cd GitHub
+$ git clone git@github.com:Krushna-P/testing.git 
+(then copy the url from github repositories and paste it here)
+(This will copy all the data you have worked on github and will 
+transfer into your desktop)
